@@ -100,5 +100,8 @@ Output:
 
 <img width="616" height="177" alt="image" src="https://github.com/user-attachments/assets/ac444e0b-2c28-482a-8ada-73ac778fbbe6" />
 
+<img width="949" height="314" alt="image" src="https://github.com/user-attachments/assets/74a02fa3-4b17-4627-8974-2d7a60a47cd6" />
+
+Our Prometheus web UI is available now, With the installation of Prometheus on Kubernetes via Helm, the Prometheus instance is now operational within the cluster, and we can reach it by navigating to a browser or using a specific URL.
 
 

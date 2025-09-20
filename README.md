@@ -103,7 +103,7 @@ Output:
 <img width="949" height="314" alt="image" src="https://github.com/user-attachments/assets/74a02fa3-4b17-4627-8974-2d7a60a47cd6" />
 
 Our Prometheus web UI is available now, With the installation of Prometheus on Kubernetes via Helm, the Prometheus instance is now operational within the cluster, and we can reach it by navigating to a browser or using a specific URL.
------------------------------------------------------------------------------------
+
 
 ##Grafana Installation:
 
@@ -128,6 +128,36 @@ An alternative approach is to navigate to the [Artifact Hub](https://artifacthub
   <img width="431" height="32" alt="image" src="https://github.com/user-attachments/assets/ad50b826-7062-4b3f-b92c-ff6a2be91b4e" />
 
   <img width="547" height="67" alt="image" src="https://github.com/user-attachments/assets/d81baa35-a6b1-4728-8668-4b141d82011f" />
+
+As you can see the Grafana repo is added successfully. Now we need to install the Grafana.
+
+##Install Grafana Helm Chart on Kubernetes Cluster
+
+ For installing the Grafana on Kubernetes, Use “helm install” command
+
+  ```helm install grafana grafana/grafana```
+
+ <img width="842" height="311" alt="image" src="https://github.com/user-attachments/assets/82f60bd8-e2f6-4411-b3d4-9a3300fd5230" />
+
+ Having successfully installed Grafana on the Kubernetes Cluster, the Grafana server is now accessible through port 80. To retrieve the complete list of Kubernetes Services
+ 
+ associated with Grafana, execute the following command:
+
+   ```kubectl get service```
+
+<img width="688" height="146" alt="image" src="https://github.com/user-attachments/assets/8a0000cf-7eeb-4d1f-965f-19caeed31581" />
+
+##Exposing the Grafana Kubernetes Service
+
+To expose the Grafana-service on Kubernetes we need to run this command
+
+   ```kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-ext```
+
+Ootput: 
+
+<img width="749" height="161" alt="image" src="https://github.com/user-attachments/assets/12e29c82-b819-4e12-914d-7d38477ce551" />
+
+
 
 
 

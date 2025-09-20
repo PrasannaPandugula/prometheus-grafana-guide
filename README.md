@@ -103,5 +103,32 @@ Output:
 <img width="949" height="314" alt="image" src="https://github.com/user-attachments/assets/74a02fa3-4b17-4627-8974-2d7a60a47cd6" />
 
 Our Prometheus web UI is available now, With the installation of Prometheus on Kubernetes via Helm, the Prometheus instance is now operational within the cluster, and we can reach it by navigating to a browser or using a specific URL.
+-----------------------------------------------------------------------------------
+
+##Grafana Installation:
+
+To begin, let’s initiate the Grafana installation. Subsequently, we’ll establish integration between Prometheus and Grafana, with Grafana configured to utilize Prometheus as its primary data source. Lastly, leveraging Grafana, we’ll craft insightful dashboards to monitor and observe the Kubernetes cluster.
+
+Now search for the Grafana helm chart by running the below command:
+
+      ```helm search hub grafana```
+
+<img width="958" height="268" alt="image" src="https://github.com/user-attachments/assets/e16dc2a7-c01d-47b5-9784-898bca45b9c1" />
+
+An alternative approach is to navigate to the [Artifact Hub](https://artifacthub.io/) repository and explore the official Grafana Helm Chart.
+
+<img width="605" height="415" alt="image" src="https://github.com/user-attachments/assets/0a010c81-6b80-4338-9265-5286234e0d37" />
+
+#To Get Repo Info:
+
+  ```helm repo add grafana https://grafana.github.io/helm-charts```
+  
+  ```helm repo update```
+
+  <img width="431" height="32" alt="image" src="https://github.com/user-attachments/assets/ad50b826-7062-4b3f-b92c-ff6a2be91b4e" />
+
+  <img width="547" height="67" alt="image" src="https://github.com/user-attachments/assets/d81baa35-a6b1-4728-8668-4b141d82011f" />
+
+
 
 

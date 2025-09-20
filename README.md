@@ -62,10 +62,27 @@ Output:
 
 <img width="698" height="134" alt="image" src="https://github.com/user-attachments/assets/13af8700-57fb-43b0-9e63-4a7fcd5abbf1" />
 
-#Prometheus-alert manager(ClusterIP): 
+##Prometheus-alert manager(ClusterIP): 
 
   Alertmanager is a component of Prometheus that manages and handles alerts. This service provides the ClusterIP for communication within the cluster on port 9093.
   
-#Prometheus-alert manager-headless(ClusterIP): 
+##Prometheus-alert manager-headless(ClusterIP): 
 
   This is a headless service for Alertmanager, meaning it does not provide a ClusterIP. It is used for discovery purposes, typically when other services need to discover the     IP addresses of Alertmanager instances.
+## Prometheus-kube-state-metrics (ClusterIP):
+
+ Kube-state-metrics is an add-on service for Prometheus that exposes Kubernetes resource metrics. This service provides a ClusterIP for communication within the cluster on     port 8080.
+
+## Prometheus-prometheus-node-exporter (ClusterIP):
+
+ Node Exporter is a Prometheus exporter that collects system-level metrics from nodes in the cluster. This service provides a ClusterIP for communication within the cluster    on port 9100.
+## Prometheus-prometheus-pushgateway (ClusterIP):
+
+ Pushgateway allows ephemeral and batch jobs to expose their metrics to Prometheus. This service provides a ClusterIP for communication within the cluster on port 9091.
+
+## Prometheus-server (ClusterIP):
+
+  Prometheus server is the core component that collects, stores, and queries metrics. This service provides a ClusterIP for communication within the cluster.
+
+
+

@@ -1,8 +1,5 @@
 Overview of Prometheus, Grafana, and Helm:
 
-![Uploading image.png…]()
-
-
 Prometheus: An open-source monitoring and alerting toolkit designed for Kubernetes, Prometheus excels in collecting and querying real-time metrics.
 Grafana: A powerful analytics and monitoring platform that integrates seamlessly with Prometheus, offering visually stunning dashboards.
 Helm: The Kubernetes package manager that simplifies the deployment and management of applications through charts.

@@ -40,19 +40,19 @@ Prometheus-rule files: Stores Prometheus alerting and recording rules.
 
 2. ServiceAccounts:
 
-   Prometheus-server: Defines the service account used by the Prometheus server components.
+    Prometheus-server: Defines the service account used by the Prometheus server components.
 
 3. ClusterRole and ClusterRoleBinding:
 
-   Prometheus-server: Grants necessary permissions to the Prometheus server components.
+    Prometheus-server: Grants necessary permissions to the Prometheus server components.
 
 4. StatefulSet:
 
-  Prometheus-server: Manages the stateful deployment of Prometheus server pods.
+    Prometheus-server: Manages the stateful deployment of Prometheus server pods.
 
 5. Service:
 
-  Prometheus-server: Exposes the Prometheus server within the cluster.
+    Prometheus-server: Exposes the Prometheus server within the cluster.
 
 The next step is to access and launch the Prometheus Kubernetes application. You’ll access the application using the Kubernetes services for Prometheus. To get all the Kubernetes Services for Prometheus, run this command:
 

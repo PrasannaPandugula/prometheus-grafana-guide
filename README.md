@@ -56,3 +56,9 @@ Prometheus-rule files: Stores Prometheus alerting and recording rules.
 
 The next step is to access and launch the Prometheus Kubernetes application. You’ll access the application using the Kubernetes services for Prometheus. To get all the Kubernetes Services for Prometheus, run this command:
 
+      ```kubectl get service```
+      
+Output:
+
+<img width="698" height="134" alt="image" src="https://github.com/user-attachments/assets/13af8700-57fb-43b0-9e63-4a7fcd5abbf1" />
+

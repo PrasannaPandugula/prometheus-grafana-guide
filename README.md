@@ -30,21 +30,27 @@ Output:
 When you install the Prometheus Helm chart, it creates several Kubernetes resources to set up the Prometheus monitoring system. Here’s a brief list of the key resources that are typically created:
 
 ConfigMaps:
+
 Prometheus-server: Contains the main Prometheus configuration.
 Prometheus-rule files: Stores Prometheus alerting and recording rules.
 
 Secrets:
+
 Prometheus-server-TLS: Contains TLS certificates for secure communication.
 
 ServiceAccounts:
+
 Prometheus-server: Defines the service account used by the Prometheus server components.
 
 ClusterRole and ClusterRoleBinding:
+
 Prometheus-server: Grants necessary permissions to the Prometheus server components.
 
 StatefulSet:
+
 Prometheus-server: Manages the stateful deployment of Prometheus server pods.
 
 Service:
+
 Prometheus-server: Exposes the Prometheus server within the cluster.
 

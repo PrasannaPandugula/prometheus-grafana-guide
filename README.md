@@ -84,5 +84,21 @@ Output:
 
   Prometheus server is the core component that collects, stores, and queries metrics. This service provides a ClusterIP for communication within the cluster.
 
+## Exposing the Prometheus-server service on Kubernetes
+
+ To expose the Kubernetes Prometheus-server service, run this command
+
+   ```kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-ext```
+
+If you need to access Prometheus from outside the Kubernetes cluster, exposing it as a NodePort allows you to do so. You can use the node’s IP and the allocated NodePort to reach Prometheus. If you have external monitoring or visualization tools that need to connect to Prometheus, exposing it as a NodePort facilitates this external integration.
+
+After making the Prometheus-server Kubernetes service accessible, let’s reach the Prometheus application by employing the provided command.
+
+  ```minikube service prometheus-server-ext```
+
+Output: 
+
+<img width="616" height="177" alt="image" src="https://github.com/user-attachments/assets/ac444e0b-2c28-482a-8ada-73ac778fbbe6" />
+
 
 

@@ -34,23 +34,25 @@ ConfigMaps:
 Prometheus-server: Contains the main Prometheus configuration.
 Prometheus-rule files: Stores Prometheus alerting and recording rules.
 
-Secrets:
+1. Secrets:
 
-Prometheus-server-TLS: Contains TLS certificates for secure communication.
+   Prometheus-server-TLS: Contains TLS certificates for secure communication.
 
-ServiceAccounts:
+2. ServiceAccounts:
 
-Prometheus-server: Defines the service account used by the Prometheus server components.
+   Prometheus-server: Defines the service account used by the Prometheus server components.
 
-ClusterRole and ClusterRoleBinding:
+3. ClusterRole and ClusterRoleBinding:
 
-Prometheus-server: Grants necessary permissions to the Prometheus server components.
+   Prometheus-server: Grants necessary permissions to the Prometheus server components.
 
-StatefulSet:
+4. StatefulSet:
 
-Prometheus-server: Manages the stateful deployment of Prometheus server pods.
+  Prometheus-server: Manages the stateful deployment of Prometheus server pods.
 
-Service:
+5. Service:
 
-Prometheus-server: Exposes the Prometheus server within the cluster.
+  Prometheus-server: Exposes the Prometheus server within the cluster.
+
+The next step is to access and launch the Prometheus Kubernetes application. You’ll access the application using the Kubernetes services for Prometheus. To get all the Kubernetes Services for Prometheus, run this command:
 

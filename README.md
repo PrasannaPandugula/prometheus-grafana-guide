@@ -180,6 +180,19 @@ Login to Grafana:
 
 <img width="931" height="351" alt="image" src="https://github.com/user-attachments/assets/071427fe-c586-4a41-b694-428fbc818275" />
 
+# Now lets add the data source as Prometheus. To add Prometheus as the data source, follow these steps:
+
+  1. On the Welcome to Grafana Home page, click Add your first data source
+     
+  2. Select Prometheus as the data source
+
+<img width="706" height="295" alt="image" src="https://github.com/user-attachments/assets/bb8cbb98-b5dd-41de-8287-2cab2a4f7b38" />
+
+Include the internal cluster URL of your Prometheus application by referring to the initial URL displayed when executing the ‘minikube service prometheus-server-ext’ command earlier.
+
+<img width="577" height="107" alt="image" src="https://github.com/user-attachments/assets/e9cdd2b2-9fed-4c63-a12d-36791a7c1243" />
+
+
 
 
 

@@ -147,7 +147,7 @@ As you can see the Grafana repo is added successfully. Now we need to install th
 
 <img width="688" height="146" alt="image" src="https://github.com/user-attachments/assets/8a0000cf-7eeb-4d1f-965f-19caeed31581" />
 
-##Exposing the Grafana Kubernetes Service
+## Exposing the Grafana Kubernetes Service
 
 To expose the Grafana-service on Kubernetes we need to run this command
 
@@ -156,6 +156,32 @@ To expose the Grafana-service on Kubernetes we need to run this command
 Ootput: 
 
 <img width="749" height="161" alt="image" src="https://github.com/user-attachments/assets/12e29c82-b819-4e12-914d-7d38477ce551" />
+
+
+By executing this command, we transition the service type from ClusterIP to NodePort, enabling external access to Grafana beyond the Kubernetes Cluster. The service will now be reachable on port 32449.
+
+Run below command will generate the following URL to access the Grafana dashboard.
+
+   ```minikube service grafana-ext```
+
+<img width="517" height="142" alt="image" src="https://github.com/user-attachments/assets/92b538b2-4365-4de0-b5b9-6ae33b803c7e" />
+
+# Grafana UI:
+
+<img width="862" height="409" alt="image" src="https://github.com/user-attachments/assets/4afa4041-e967-429d-bc52-8dc56853ed70" />
+
+UserName: admin
+
+Password: run below command
+
+kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | ForEach-Object { [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($_)) }
+
+Login to Grafana:
+
+<img width="931" height="351" alt="image" src="https://github.com/user-attachments/assets/071427fe-c586-4a41-b694-428fbc818275" />
+
+
+
 
 
 

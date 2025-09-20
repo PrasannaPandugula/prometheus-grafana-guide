@@ -11,4 +11,5 @@ Helm: The Kubernetes package manager that simplifies the deployment and manageme
 
 Prometheus Installation:
 Step 1: Search for the Prometheus helm chart using the below command
+
   ``` helm search hub Prometheus ```

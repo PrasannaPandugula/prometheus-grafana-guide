@@ -192,6 +192,25 @@ Include the internal cluster URL of your Prometheus application by referring to 
 
 <img width="577" height="107" alt="image" src="https://github.com/user-attachments/assets/e9cdd2b2-9fed-4c63-a12d-36791a7c1243" />
 
+## Grafana Dashboard
+
+In this section, our focus will be on importing a Grafana Dashboard to streamline the process.
+
+To import a Grafana Dashboard, follow these steps:
+
+Get the Grafana Dashboard ID from the Grafana public Dashboard library (https://grafana.com/grafana/dashboards/)
+
+<img width="1292" height="585" alt="image" src="https://github.com/user-attachments/assets/7c465d13-cf12-4cdf-8f64-2f6bb8797988" />
+
+1. Now go to the search dashboard, and search for Kubernetes:
+
+<img width="855" height="345" alt="image" src="https://github.com/user-attachments/assets/f1acfb08-3e30-493d-b678-254cd6fc6523" />
+
+2. Select Dashboard and copy the Dashboard ID:
+
+<img width="557" height="425" alt="image" src="https://github.com/user-attachments/assets/7cc38b0b-fd0f-4cab-a6b0-6eb20e45ac13" />
+
+
 
 
 
